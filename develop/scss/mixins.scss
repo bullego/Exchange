@@ -1,0 +1,21 @@
+@mixin main-article {
+	font-family: 'Roboto', "Arial", sans-serif;
+	font-size: 32px;
+	line-height: 60px;
+	font-style: normal;
+	font-weight: 500;
+}
+@mixin currency {
+	font-family: 'Roboto', "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 60px;
+	font-style: normal;
+	font-weight: 300;	
+}
+@mixin article-card {
+	font-family: 'Roboto', "Arial", sans-serif;
+	font-size: 22px;
+	line-height: 58px;
+	font-style: normal;
+	font-weight: 700;	
+}

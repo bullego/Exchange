@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Challenge</title>
+
+	<link rel="preload" href="fonts/Roboto-Light.woff2" as="font">
+	<link rel="preload" href="fonts/Roboto-Medium.woff2" as="font">
+	<link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="exchange">
+		<div class="exchange--container">
+
+		 	<div class="exchange__currency-select">
+		 		<div class="exchange__currency-title">Select currency to exhange:</div>
+
+		 		<select class="select__items" autofocus>
+		 			<option class="select__item  ie-usd"
+		 					id="select__usd"
+		 					selected>USD</option>
+		 			<option class="select__item  ie-eur"
+		 					id="select__eur">EUR</option>
+			 		<option class="select__item  ie-rub"
+			 				id="select__rub">RUB</option>
+			 		<option class="select__item  ie-gbp"
+			 				id="select__gbp">GBP</option>	
+		 		</select>
+		 	</div>
+
+		 	<div class="exchange__card">
+		 		<div class="exchange__card-first  first-card">
+		 			<div class="first-card__title">Ethereum</div>
+
+		 			<div class="first-card__info">
+
+		 				<div class="first-card__info-price">
+		 					<div class="first-card__info-price--left">Price:</div>
+		 					<div class="first-card__info-price--right  ie-etr-price" id="etr-price">$22 526.92</div>
+		 				</div>
+
+		 				<div class="first-card__info-range">
+		 					<div class="first-card__info-range--left">
+		 						Percent change
+		 					</div>
+		 					<div class="first-card__info-range--right">
+
+		 						<div class="switch-eth">
+								    <input type="checkbox" id="switch-eth" class="switch-eth-check  ie-switch-eth">
+								    <label for="switch-eth" class="switch-eth-label">
+								    	Check
+								    	<span></span>
+								    </label>
+								</div>
+
+		 					</div>
+		 				</div>
+
+		 				<div class="first-card__info-change">
+		 					<div class="first-card__info-change--hour">
+		 						<div class="first-card__info-change--hour-left">
+		 							Hour change
+		 						</div>
+		 						<div class="first-card__info-change--hour-right" id="etr-hour-change">
+		 							+266%
+		 						</div>
+		 					</div>
+		 					<div class="first-card__info-change--day">
+		 						<div class="first-card__info-change--day-left">
+		 							Day change
+		 						</div>
+		 						<div class="first-card__info-change--day-right" id="etr-day-change">
+		 							+266%
+		 						</div>
+		 					</div>
+		 					<div class="first-card__info-change--week">
+		 						<div class="first-card__info-change--week-left">
+		 							Week change
+		 						</div>
+		 						<div class="first-card__info-change--week-right" id="etr-week-change">
+		 							+266%
+		 						</div>
+		 					</div>
+		 					<div class="first-card__info-change--month">
+		 						<div class="first-card__info-change--month-left">
+		 							Month change
+		 						</div>
+		 						<div class="first-card__info-change--month-right" id="etr-month-change">
+		 							+266%
+		 						</div>
+		 					</div>
+		 				</div>
+		 				
+		 			</div>
+		 		</div>
+
+
+		 		<div class="exchange__card-second  second-card">
+		 			<div class="second-card__title">Litecoin</div>
+		 			
+		 			<div class="second-card__info">
+
+		 				<div class="second-card__info-price">
+		 					<div class="second-card__info-price--left">Price:</div>
+		 					<div class="second-card__info-price--right  ie-ltc-price" id="ltc-price">$22 526.92</div>
+		 				</div>
+
+		 				<div class="second-card__info-range">
+		 					<div class="second-card__info-range--left">
+		 						Percent change
+		 					</div>
+		 					<div class="second-card__info-range--right">
+
+		 						<div class="switch-ltc">
+								    <input type="checkbox" id="switch-ltc" class="switch-ltc-check  ie-switch-ltc">
+								    <label for="switch-ltc" class="switch-ltc-label">
+								    	Check
+								    	<span></span>
+								    </label>
+								</div>
+		 						
+		 					</div>
+		 				</div>
+
+		 				<div class="second-card__info-change">
+		 					<div class="second-card__info-change--hour">
+		 						<div class="second-card__info-change--hour-left">
+		 							Hour change
+		 						</div>
+		 						<div class="second-card__info-change--hour-right" id="ltc-hour-change">
+		 							+266%
+		 						</div>
+		 					</div>
+		 					<div class="second-card__info-change--day">
+		 						<div class="second-card__info-change--day-left">
+		 							Day change
+		 						</div>
+		 						<div class="second-card__info-change--day-right" id="ltc-day-change">
+		 							+266%
+		 						</div>
+		 					</div>
+		 					<div class="second-card__info-change--week">
+		 						<div class="second-card__info-change--week-left">
+		 							Week change
+		 						</div>
+		 						<div class="second-card__info-change--week-right" id="ltc-week-change">
+		 							+266%
+		 						</div>
+		 					</div>
+		 					<div class="second-card__info-change--month">
+		 						<div class="second-card__info-change--month-left">
+		 							Month change
+		 						</div>
+		 						<div class="second-card__info-change--month-right" id="ltc-month-change">
+		 							+266%
+		 						</div>
+		 					</div>
+		 				</div>
+		 				
+		 			</div>
+		 		</div>
+
+
+		 		<div class="exchange__card-third  third-card">
+		 			<div class="third-card__title">Bitcoin</div>
+		 			
+		 			<div class="third-card__info">
+
+		 				<div class="third-card__info-price">
+		 					<div class="third-card__info-price--left">Price:</div>				
+		 					<div class="third-card__info-price--right  ie-btc-price" id="btc-price">$22 526.92</div>
+		 				</div>
+
+		 				<div class="third-card__info-range">
+		 					<div class="third-card__info-range--left">
+		 						Percent change
+		 					</div>
+		 					<div class="third-card__info-range--right">
+
+		 						<div class="switch-btc">
+								    <input type="checkbox" id="switch-btc" class="switch-btc-check">
+								    <label for="switch-btc" class="switch-btc-label  ie-switch-btc">
+								    	Check
+								    	<span></span>
+								    </label>
+								</div>
+
+		 					</div>
+		 				</div>
+
+		 				<div class="third-card__info-change">
+		 					<div class="third-card__info-change--hour">
+		 						<div class="third-card__info-change--hour-left">
+		 							Hour change
+		 						</div>
+		 						<div class="third-card__info-change--hour-right" id="btc-hour-change">
+		 							+26$
+		 						</div>
+		 					</div>
+		 					<div class="third-card__info-change--day">
+		 						<div class="third-card__info-change--day-left">
+		 							Day change
+		 						</div>
+		 						<div class="third-card__info-change--day-right" id="btc-day-change">
+		 							-20$
+		 						</div>
+		 					</div>
+		 					<div class="third-card__info-change--week">
+		 						<div class="third-card__info-change--week-left">
+		 							Week change
+		 						</div>
+		 						<div class="third-card__info-change--week-right" id="btc-week-change">
+		 							+26$
+		 						</div>
+		 					</div>
+		 					<div class="third-card__info-change--month">
+		 						<div class="third-card__info-change--month-left">
+		 							Month change
+		 						</div>
+		 						<div class="third-card__info-change--month-right" id="btc-month-change">
+		 							+26$
+		 						</div>
+		 					</div>
+		 				</div>
+		 				
+		 			</div>
+		 		</div>
+		 	</div>		 	
+		 	
+		</div>		
+	</div>	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="js/libs.min.js"></script>
+<script src="js/select.js"></script>	
+<script src="js/index.js"></script>	
+</body>
+</html>

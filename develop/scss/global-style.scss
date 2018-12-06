@@ -1,0 +1,19 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal; 
+  background-color: #fff;
+}
+a {
+  text-decoration: none;  
+  cursor: pointer;
+}
